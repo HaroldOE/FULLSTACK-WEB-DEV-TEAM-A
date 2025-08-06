@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  margin: 0%;
+  font-family: arial, sans-sarif;
+  background-color: rgba(213, 235, 88, 0.959);
+}
+.head{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-link {
+  display: flex;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+.nav-list li {
+  margin-right: 20px;
+}
+.nav-list a {
+  text-decoration: none;
+  color: black;
+}
