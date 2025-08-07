@@ -20,7 +20,7 @@ body {
   /* background-size: cover; */
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .head{
@@ -65,4 +65,10 @@ body {
   outline: none;
   margin-top: 20px;
   color: antiquewhite;
+}
+.popular-foods {
+  padding: 40px 20px;
+  background-color: rgb(254,226,179);
+  min-height: 100vh;
+  display:flex ;
 }
