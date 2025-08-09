@@ -69,3 +69,11 @@ function displayRecipes(recipes) {
     container.appendChild(recipeDiv);
   });
 }
+
+
+const morningBtn = document.getElementById('morning');
+
+morningBtn.addEventListener('click', (e) => {
+  e.preventDefault(); // prevents <a> from jumping page
+  morningBtn.classList.toggle('active');
+});
