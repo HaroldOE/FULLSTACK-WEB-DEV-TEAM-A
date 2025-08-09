@@ -33,15 +33,13 @@ body {
   align-items: center;
   padding: 20px;
 }
-<<<<<<< HEAD
 #logo {
   height: 2rem;
   width: 7rem;
-=======
+}
 #logo{
   height: 1rem;
   width: 5rem;
->>>>>>> chizoba
 }
 .nav-list {
   display: flex;
