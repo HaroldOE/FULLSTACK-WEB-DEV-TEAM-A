@@ -77,3 +77,11 @@ morningBtn.addEventListener('click', (e) => {
   e.preventDefault(); // prevents <a> from jumping page
   morningBtn.classList.toggle('active');
 });
+const lunchBtn = document.getElementById('toggleMenu');
+const mobileNav = document.getElementById('mobile-nav');
+
+lunchBtn.addEventListener('click', (e) => {
+  e.preventDefault(); // prevents <a> from jumping page
+  lunchBtn.classList.toggle('active');
+  mobileNav.classList.toggle('active');
+});

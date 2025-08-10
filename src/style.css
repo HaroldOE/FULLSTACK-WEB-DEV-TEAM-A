@@ -57,7 +57,21 @@ body {
   padding: 10px;
   border-radius: 10px;
   color: #f3f2f2;
+<<<<<<< HEAD
   text-size-adjust: bold;
+=======
+  text-size-adjust:bold;
+  position: relative;
+  z-index: 4;
+}
+.bar{
+  display: none;
+  color: #f3f2f2;
+  position: relative;
+  
+  z-index: 1;
+  
+>>>>>>> chizoba
 }
 .hero-content {
   text-align: center;
@@ -149,6 +163,7 @@ body {
     display: none;
     
   }
+<<<<<<< HEAD
     .popular-foods{
     display: grid;
     grid-template-columns: 1fr;
@@ -157,3 +172,30 @@ body {
     font-size: 40px;
   }
 }
+=======
+  .nav-list.active{
+    display: block;
+    background-color: rgb(233, 159, 68);
+    min-height: 100vh;
+    width: 200px;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    
+  }
+  .treat{
+    font-size: 40px;
+  }
+  .popular-foods{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .bar{
+    display: block;
+    position: relative;
+    z-index: 10;
+  }
+}
+>>>>>>> chizoba
