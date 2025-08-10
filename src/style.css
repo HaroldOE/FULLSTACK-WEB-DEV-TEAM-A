@@ -25,7 +25,7 @@ body {
   /* background-size: cover; */
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .head {
@@ -37,6 +37,10 @@ body {
 #logo {
   height: 2rem;
   width: 7rem;
+}
+#logo{
+  height: 1rem;
+  width: 5rem;
 }
 .nav-list {
   display: flex;
@@ -70,4 +74,86 @@ body {
   outline: none;
   margin-top: 20px;
   color: antiquewhite;
+}
+
+.popular-foods {
+   display:flex ;
+  padding-top: 80px ;
+  background-color: rgb(254,226,179);
+  min-height: 100vh;
+ 
+  gap: 20px;
+}
+.pop{
+  color: #f3f2f2;
+  background-color: black;
+}
+.meal{
+  color: #727272;
+  
+}
+.event{
+  padding-left: 10px;
+}
+.c-btn{
+  max-width: 20rem;
+  margin: 30px;
+  padding: 40px;
+}
+.foods{
+  color: rgb(255,82,0);
+}
+
+.btn{
+  color: #727272;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  /* background-color: rgb(247, 246, 245); */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.breakfast.btn a {
+  
+  text-decoration: none;
+}
+
+/* Clicked style */
+.breakfast.btn.active {
+  background: linear-gradient(135deg, tomato, gold);
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  color: white;
+}
+.box{
+  display:flex;
+  flex-direction: row;
+  gap: 100px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.box img{
+  border-radius: 5px;
+}
+/* screen size */
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 600px) {
+
+  .nav-list{
+    display: none;
+    
+  }
+    .popular-foods{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .treat{
+    font-size: 40px;
+  }
 }
