@@ -11,7 +11,6 @@
 
   <body>
     <section class="hero">
-      <div class="hero-overlay"></div>
       <div class="head">
         <a href="#"><img src="/src/images/logo.png" alt="" id="logo" /></a>
         <ul class="nav-list">
@@ -41,6 +40,76 @@
         <div>socials</div>
       </div>
     </section>
+
+    <style>
+      .tick::before {
+        content: "✔";
+        color: #0e0d0d;
+        font-weight: bold;
+        margin-right: 0.5rem;
+      }
+    </style>
+
+    <section
+      class="bg-[#fee2b3] min-h-screen flex items-start justify-center pt-20 pb-20"
+    >
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-[50px] max-w-6xl w-full p-4"
+      >
+        <!-- Top-left: Image Card -->
+        <div class="card bg-white overflow-hidden shadow-lg">
+          <img
+            src="/src/images/party_1.jpg.jpeg"
+            alt="Party image"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <!-- Top-right: Text Card -->
+        <div class="card bg-inherit pl-[100px] flex flex-col justify-center">
+          <h1 class="text-xl font-bold text-red-600 mb-2">$200.99</h1>
+          <h1 class="text-xl font-bold mb-6 text-red-600">Birthday Party</h1>
+          <p class="text-black mb-6">
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts. Separated they
+            live in Bookmarksgrove right at the coast of the Semantics, a large
+            language ocean.
+          </p>
+
+          <ul class="text-gray-600">
+            <li class="tick mb-4">Away behind the word</li>
+            <li class="tick mb-4">Bookmarksgrove right at the coast</li>
+            <li class="tick mb-4">Separated they live</li>
+          </ul>
+        </div>
+
+        <!-- Bottom-left: Text Card -->
+        <div class="card bg-inherit pr-[100px] flex flex-col justify-center">
+          <h1 class="text-xl font-bold mb-2 text-red-600">$200.99</h1>
+          <h1 class="text-xl font-bold mb-6 text-red-600">Birthday Party</h1>
+          <p class="text-black mb-6">
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts. Separated they
+            live in Bookmarksgrove right at the coast of the Semantics, a large
+            language ocean.
+          </p>
+
+          <ul class="text-gray-600">
+            <li class="tick mb-4">Away behind the word</li>
+            <li class="tick mb-4">Bookmarksgrove right at the coast</li>
+            <li class="tick mb-4">Separated they live</li>
+          </ul>
+        </div>
+
+        <!-- Bottom-right: Image Card -->
+        <div class="card bg-white overflow-hidden shadow-lg">
+          <img
+            src="/src/images/party_2.jpg.jpeg"
+            alt="Hotel Interior"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </section>
   </body>
-  <body></body>
 </html>

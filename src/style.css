@@ -10,6 +10,7 @@ body {
   /* background-color: rgba(15, 17, 2, 0.959); */
   color: antiquewhite;
 }
+
 .hero {
   background-image: radial-gradient(
       circle at top left,
