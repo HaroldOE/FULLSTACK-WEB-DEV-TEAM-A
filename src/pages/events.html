@@ -3,42 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Team A Reciepe Website</title>
-    <link rel="stylesheet" href="./src/style.css" />
+    <title>Group A Food Reciepie website</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script/api_recipe.js" defer></script>
   </head>
+
   <body>
-    <section>
-      <div>
-        <a href="#">logo</a>
-        <ul>
-          <li>Home</li>
-          <li>Menu</li>
-          <li>Event</li>
-          <li>Gallery</li>
-          <li>About</li>
-          <li>Contact</li>
+    <section class="hero">
+      <div class="head">
+        <a href="#"><img src="/src/images/logo.png" alt="" id="logo" /></a>
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Event</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
-        <button>Book a table</button>
+        <button class="btn-nav">Book a Table</button>
       </div>
 
-      <div>
-        <h6>Enjoy our events</h6>
-        <h1>Our Events</h1>
+      <div class="hero-content">
+        <h3>Enjoy your healthy delicious meals</h3>
+        <h1 class="treat">Treat Yourself</h1>
         <h4>
-          Another free template by Colorlib. Far far away, behind the word
-          <br />mountains, far from the countries Vokalia and Consonantia, there
-          <br />live the blind texts.
+          Another free template by Colorlib. Far far away, behind the word<br />
+          mountains, far from the countries Vokalia and Consonantia, there
+          <br />
+          live the blind texts.
         </h4>
-        <button>Explore now</button>
+        <button class="btn-explore">Explore Now</button>
       </div>
-
-      <div>
+      <div class="hero-footer">
         <p>scroll down</p>
-        <div>
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
+        <div>socials</div>
+      </div>
+    </section>
+
+    <style>
+      .tick::before {
+        content: "✔";
+        color: #0e0d0d;
+        font-weight: bold;
+        margin-right: 0.5rem;
+      }
+    </style>
+
+    <section
+      class="bg-[#fee2b3] min-h-screen flex items-start justify-center pt-20 pb-20"
+    >
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-[50px] max-w-6xl w-full p-4"
+      >
+        <!-- Top-left: Image Card -->
+        <div class="card bg-white overflow-hidden shadow-lg">
+          <img
+            src="/src/images/party_1.jpg.jpeg"
+            alt="Party image"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <!-- Top-right: Text Card -->
+        <div class="card bg-inherit pl-[100px] flex flex-col justify-center">
+          <h1 class="text-xl font-bold text-red-600 mb-2">$200.99</h1>
+          <h1 class="text-xl font-bold mb-6 text-red-600">Birthday Party</h1>
+          <p class="text-black mb-6">
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts. Separated they
+            live in Bookmarksgrove right at the coast of the Semantics, a large
+            language ocean.
+          </p>
+
+          <ul class="text-gray-600">
+            <li class="tick mb-4">Away behind the word</li>
+            <li class="tick mb-4">Bookmarksgrove right at the coast</li>
+            <li class="tick mb-4">Separated they live</li>
+          </ul>
+        </div>
+
+        <!-- Bottom-left: Text Card -->
+        <div class="card bg-inherit pr-[100px] flex flex-col justify-center">
+          <h1 class="text-xl font-bold mb-2 text-red-600">$200.99</h1>
+          <h1 class="text-xl font-bold mb-6 text-red-600">Birthday Party</h1>
+          <p class="text-black mb-6">
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts. Separated they
+            live in Bookmarksgrove right at the coast of the Semantics, a large
+            language ocean.
+          </p>
+
+          <ul class="text-gray-600">
+            <li class="tick mb-4">Away behind the word</li>
+            <li class="tick mb-4">Bookmarksgrove right at the coast</li>
+            <li class="tick mb-4">Separated they live</li>
+          </ul>
+        </div>
+
+        <!-- Bottom-right: Image Card -->
+        <div class="card bg-white overflow-hidden shadow-lg">
+          <img
+            src="/src/images/party_2.jpg.jpeg"
+            alt="Hotel Interior"
+            class="w-full h-full object-cover"
+          />
         </div>
       </div>
     </section>

@@ -7,15 +7,20 @@
 body {
   margin: 0;
   font-family: arial, sans-sarif;
-  background-color: rgba(213, 235, 88, 0.959);
+  /* background-color: rgba(15, 17, 2, 0.959); */
+  color: antiquewhite;
 }
-.hero{
- background-image: 
-  radial-gradient(circle at top left, rgba(0, 0, 0, 0.4), transparent 60%),
-  radial-gradient(circle at top right, rgba(0, 0, 0, 0.4), transparent 60%),
-  radial-gradient(circle at bottom left, rgba(0, 0, 0, 0.4), transparent 60%),
-  radial-gradient(circle at bottom right, rgba(0, 0, 0, 0.4), transparent 60%),
-  url('./images/hero_bg.jpg.jpeg');
+
+.hero {
+  background-image: radial-gradient(
+      circle at top left,
+      rgba(0, 0, 0, 0.4),
+      transparent 60%
+    ),
+    radial-gradient(circle at top right, rgba(0, 0, 0, 0.4), transparent 60%),
+    radial-gradient(circle at bottom left, rgba(0, 0, 0, 0.4), transparent 60%),
+    radial-gradient(circle at bottom right, rgba(0, 0, 0, 0.4), transparent 60%),
+    url("./images/hero_bg.jpg.jpeg");
 
   /* background-size: cover; */
   background-position: center;
@@ -23,31 +28,38 @@ body {
   min-height: 100vh;
 }
 
-.head{
+.head {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
 }
+#logo {
+  height: 2rem;
+  width: 7rem;
+}
 #logo{
   height: 1rem;
   width: 5rem;
 }
-.nav-list{
+.nav-list {
   display: flex;
   list-style: none;
   gap: 20px;
 }
-.nav-list li a{
+.nav-list li a {
   text-decoration: none;
   color: #f3f2f2;
 }
 
-.btn-nav{
-  background-color:RGB(255 82 0) ;
+.btn-nav {
+  background-color: RGB(255 82 0);
   padding: 10px;
   border-radius: 10px;
   color: #f3f2f2;
+<<<<<<< HEAD
+  text-size-adjust: bold;
+=======
   text-size-adjust:bold;
   position: relative;
   z-index: 4;
@@ -59,26 +71,28 @@ body {
   
   z-index: 1;
   
+>>>>>>> chizoba
 }
 #toggleMenu{
   display: none;
 }
-.hero-content{
+.hero-content {
   text-align: center;
   color: #f3f2f2;
   margin: 80px;
 }
-.treat{
+.treat {
   font-size: 80px;
 }
-.btn-explore{
-  background-color: rgb(255,82,0);
+.btn-explore {
+  background-color: rgb(255, 82, 0);
   padding: 20px;
   border-radius: 20px;
   outline: none;
   margin-top: 20px;
   color: antiquewhite;
 }
+
 .popular-foods {
    display:flex ;
   padding-top: 80px ;
@@ -158,6 +172,16 @@ body {
     display: none;
     
   }
+<<<<<<< HEAD
+    .popular-foods{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .treat{
+    font-size: 40px;
+  }
+}
+=======
   .nav-list.active{
     display: block;
     background-color: rgb(233, 159, 68);
@@ -182,11 +206,4 @@ body {
     position: relative;
     z-index: 10;
   }
-  #toggleMenu{
-    display: block;
-    top: 0;
-    right: 0;
-    /* position: relative; */
-    /* z-index: 11; */
-}
 }
