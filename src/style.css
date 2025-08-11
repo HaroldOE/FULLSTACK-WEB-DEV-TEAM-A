@@ -57,9 +57,7 @@ body {
   padding: 10px;
   border-radius: 10px;
   color: #f3f2f2;
-<<<<<<< HEAD
   text-size-adjust: bold;
-=======
   text-size-adjust:bold;
   position: relative;
   z-index: 4;
@@ -71,7 +69,6 @@ body {
   
   z-index: 1;
   
->>>>>>> chizoba
 }
 #toggleMenu{
   display: none;
