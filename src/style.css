@@ -60,6 +60,9 @@ body {
   z-index: 1;
   
 }
+#toggleMenu{
+  display: none;
+}
 .hero-content{
   text-align: center;
   color: #f3f2f2;
@@ -143,6 +146,12 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+.menu-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
 @media screen and (max-width: 600px) {
 
   .nav-list{
@@ -153,8 +162,8 @@ body {
     display: block;
     background-color: rgb(233, 159, 68);
     min-height: 100vh;
-    width: 200px;
-    padding: 20px;
+    width: 300px;
+    padding: 40px 0 0 40px;
     position: absolute;
     top: 0;
     right: 0;
@@ -173,4 +182,11 @@ body {
     position: relative;
     z-index: 10;
   }
+  #toggleMenu{
+    display: block;
+    top: 0;
+    right: 0;
+    /* position: relative; */
+    /* z-index: 11; */
+}
 }
