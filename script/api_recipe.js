@@ -85,3 +85,8 @@ lunchBtn.addEventListener('click', (e) => {
   lunchBtn.classList.toggle('active');
   mobileNav.classList.toggle('active');
 });
+
+mobileNav.addEventListener('click', (e) => {
+e.preventDefault();
+mobileNav.classList.toggle('active');
+});
