@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <section class="hero">
+    <section class="hero bg-[url('./src/images/hero_bg.jpeg')] bg-cover bg-center bg-no-repeat bg-fixed min-h-screen ">
       <div class="head">
         <a href="#"><img src="/src/images/logo.png" alt="" id="logo" /></a>
         <ul class="nav-list" id="mobile-nav">
@@ -41,16 +41,17 @@
         </h4>
         <button class="btn-explore">Explore Now</button>
       </div>
-      <div class="hero-footer">
-        <p>scroll down</p>
+      <div class="hero-footer flex justify-between items-center">
+        <p></p>
+        <p class="text-gray-50 ">scroll down</p>
         <div>socials</div>
       </div>
     </section>
-    <section class="popular-foods ">
-      <div class="event flex flex-col gap-5 ">
+    <section class="popular-foods  ">
+      <div class="event flex flex-col gap-5 justify-center items-center">
             <div class="title">
                   <p class="meal uppercase">Select your Meal</p>
-                  <h1 class="pop text-4xl  font-bold">Popular <div class="foods">Foods</div> </h1>
+                  <h1 class="pop text-4xl  font-bold">Popular <span class="foods">Foods</span> </h1>
             </div>
             <div class="c-btn flex flex-col gap-10">
               <button class="breakfast btn" id="morning"><a href="#">Breakfast</a></button>
@@ -80,10 +81,10 @@
           </div>
       </div>
     </section>
-    <section class="desserts p-40">
+    <section class="desserts pt-20">
       <div class="dessert-header flex flex-col  items-center ">
         <h3 class="meal uppercase">Choose desserts</h3>
-        <h1 class="text-4xl  font-bold">Popular Desserts</h1>
+        <h1 class="text-4xl  font-bold pb-20">Popular Desserts</h1>
       </div>
       <div class="container-desserts">
           <div class="dzert">
@@ -104,6 +105,26 @@
             <p>$20</p></div></div>
       </div>
     </section>
+    <main class="testimony ">
+         <div class="cover flex flex-col md:flex-row gap-10 p-6 md:p-20">
+  <div class="testi">
+    <h2 class="text-sm uppercase text-gray-600">Testimonials</h2>
+    <h6 class="text-3xl font-semibold text-gray-800">Satisfied Customers</h6>
+  </div>
+
+  <div class="galleries">
+    <h2 class="text-sm uppercase text-gray-600">Galleries</h2>
+    <h6 class="text-3xl font-semibold text-gray-800">Photo Galleries</h6>
+    <div class="grid grid-cols-2 gap-4 mt-4">
+      <img src="./src/images/food.jpeg" alt="">
+      <img src="./src/images/img_2.jpg.jpeg" alt="">
+      <img src="./src/images/food2.jpeg" alt="">
+      <img src="./src/images/img_2_b.jpg.jpeg" alt="">
+    </div>
+  </div>
+</div>
+
+    </main>
    
   </body>
   <body></body>

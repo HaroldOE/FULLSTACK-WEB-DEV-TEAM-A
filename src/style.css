@@ -9,19 +9,15 @@ body {
   font-family: arial, sans-sarif;
   background-color: rgba(213, 235, 88, 0.959);
 }
-.hero{
+/* .hero{
  background-image: 
-  radial-gradient(circle at top left, rgba(0, 0, 0, 0.4), transparent 60%),
-  radial-gradient(circle at top right, rgba(0, 0, 0, 0.4), transparent 60%),
-  radial-gradient(circle at bottom left, rgba(0, 0, 0, 0.4), transparent 60%),
-  radial-gradient(circle at bottom right, rgba(0, 0, 0, 0.4), transparent 60%),
-  url('./images/hero_bg.jpg.jpeg');
-
-  /* background-size: cover; */
+  url('images/hero_bg.jpg.jpeg');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   min-height: 100vh;
-}
+} */
 
 .head{
   display: flex;
@@ -82,19 +78,22 @@ body {
 }
 .popular-foods {
    display:flex ;
+   justify-content: center;
+   align-items: center;
   padding-top: 80px ;
   background-color: rgb(254,226,179);
   min-height: 100vh;
   gap: 20px;
 }
 .pop{
-  color: #f3f2f2;
-  background-color: black;
+  color: #1b1a1a;
+
 }
 .meal{
   color: #727272;
   
 }
+
 .event{
   padding-left: 10px;
 }
@@ -154,12 +153,13 @@ body {
 }
 .desserts{
   background-color: rgb(254,226,179);
+  min-height: 100vh;
 }
 .container-desserts {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  padding: 20px 0 0 20px;
+  /* padding: 20px 0 0 20px; */
   align-items: center;
   justify-items: center;
 }
@@ -172,13 +172,36 @@ body {
   letter-spacing: 2px;
   font-size: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  min-width: 300px;
+  min-width: 200px;
   max-height: 10rem;
-  padding: 10px;
+  /* padding: 10px; */
  }
  .dzert:hover{
   background-color: #f3f2f2;
  }
+.testimony {
+  position: relative;
+  min-height: 100vh;
+  background: url("./images/hero_bg_2.jpg.jpeg") center/cover fixed no-repeat;
+}
+
+.testimony::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(240, 173, 78, 0.8); /* orange tint */
+  z-index: 0;
+  
+}
+
+.cover {
+  position: relative;
+  z-index: 1; /* ensures content is above the overlay */
+}
+.gall{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 @media screen and (max-width: 600px) {
 
@@ -215,6 +238,7 @@ body {
     right: 0;
 }
 .container-desserts{
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 }
