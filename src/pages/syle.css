@@ -1,5 +1,6 @@
-.gallery {
-  margin: 0%;
-  padding: 0%;
+.jesu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
   background-color: rgb(247, 222, 191);
 }
