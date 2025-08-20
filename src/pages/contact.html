@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group A Food Recipe Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Radial overlay for hero */
+      .hero-overlay {
+        background-image: radial-gradient(
+            circle at top left,
+            rgba(0, 0, 0, 0.4),
+            transparent 60%
+          ),
+          radial-gradient(
+            circle at top right,
+            rgba(0, 0, 0, 0.4),
+            transparent 60%
+          ),
+          radial-gradient(
+            circle at bottom left,
+            rgba(0, 0, 0, 0.4),
+            transparent 60%
+          ),
+          radial-gradient(
+            circle at bottom right,
+            rgba(0, 0, 0, 0.4),
+            transparent 60%
+          );
+      }
+    </style>
+  </head>
+
+  <body class="font-sans text-gray-100">
+    <!-- HERO SECTION -->
+    <section
+      class="relative bg-cover bg-center min-h-screen flex flex-col justify-between"
+      style="background-image: url('/src/images/hero_bg.jpg.jpeg')"
+    >
+      <!-- Radial overlay -->
+      <div class="absolute inset-0 hero-overlay"></div>
+
+      <!-- Header -->
+      <header
+        class="relative z-10 flex justify-between items-center p-4 bg-transparent"
+      >
+        <a href="#"
+          ><img src="./src/images/logo.png" alt="Logo" class="h-8 w-auto"
+        /></a>
+        <nav class="hidden md:flex gap-6">
+          <a href="#" class="hover:text-orange-400">Home</a>
+          <a href="#" class="hover:text-orange-400">Menu</a>
+          <a href="#" class="hover:text-orange-400">Event</a>
+          <a href="#" class="hover:text-orange-400">Gallery</a>
+          <a href="#" class="hover:text-orange-400">About</a>
+          <a href="#" class="hover:text-orange-400">Contact</a>
+        </nav>
+        <button class="bg-orange-500 px-4 py-2 rounded-lg hover:bg-orange-600">
+          Book a Table
+        </button>
+      </header>
+
+      <!-- Hero Content -->
+      <div class="relative z-10 text-center px-4 mt-10">
+        <h3 class="text-lg md:text-xl">Enjoy your healthy delicious meals</h3>
+        <h1 class="treat text-4xl md:text-6xl lg:text-8xl font-bold my-4">
+          Treat Yourself
+        </h1>
+        <p class="max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+          Another free template by Colorlib. Far far away, behind the word
+          mountains, far from the countries Vokalia and Consonantia, there live
+          the blind texts.
+        </p>
+        <button
+          class="mt-6 bg-orange-500 px-6 py-3 rounded-full hover:bg-orange-600"
+        >
+          Explore Now
+        </button>
+      </div>
+
+      <!-- Hero Footer -->
+      <footer class="flex justify-between items-center p-4 text-sm bg-black/40">
+        <p class="mb-2"></p>
+        <p class="mb-2">Scroll down</p>
+        <div>Socials</div>
+      </footer>
+    </section>
+
+    <!-- POPULAR FOODS / MENU SECTION -->
+    <section class="popular-foods bg-orange-100 py-12 text-gray-800">
+      <div class="container mx-auto flex flex-col md:flex-row gap-10 px-4">
+        <!-- Sidebar Menu -->
+        <aside class="flex flex-col gap-6 max-w-sm">
+          <div>
+            <p class="uppercase text-gray-500">Select your Meal</p>
+            <h1 class="text-3xl font-bold text-gray-700">
+              Popular <span class="text-orange-500">Foods</span>
+            </h1>
+          </div>
+          <div class="flex flex-col gap-4">
+            <button class="btn bg-orange-500 text-white py-2 rounded-lg shadow">
+              Breakfast
+            </button>
+            <button
+              class="btn bg-white hover:bg-orange-500 hover:text-white py-2 rounded-lg shadow"
+            >
+              Lunch
+            </button>
+            <button
+              class="btn bg-white hover:bg-orange-500 hover:text-white py-2 rounded-lg shadow"
+            >
+              Dinner
+            </button>
+            <button
+              class="btn bg-white hover:bg-orange-500 hover:text-white py-2 rounded-lg shadow"
+            >
+              Drinks
+            </button>
+          </div>
+        </aside>
+
+        <!-- Menu Grid -->
+        <div class="flex-1">
+          <h2 class="text-2xl font-bold mb-6 text-gray-700">Breakfast</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Card -->
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+              <img
+                src="/src/images/food.jpeg"
+                alt="Pancakes"
+                class="w-full h-40 object-cover"
+              />
+              <div class="p-4 flex justify-between items-center">
+                <h3 class="font-semibold">Pancakes</h3>
+                <span class="text-orange-500 font-bold">$8</span>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+              <img
+                src="/src/images/food2.jpeg"
+                alt="Omelette"
+                class="w-full h-40 object-cover"
+              />
+              <div class="p-4 flex justify-between items-center">
+                <h3 class="font-semibold">Omelette</h3>
+                <span class="text-orange-500 font-bold">$6</span>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+              <img
+                src="/src/images/food3.jpeg"
+                alt="Avocado Toast"
+                class="w-full h-40 object-cover"
+              />
+              <div class="p-4 flex justify-between items-center">
+                <h3 class="font-semibold">Avocado Toast</h3>
+                <span class="text-orange-500 font-bold">$7</span>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+              <img
+                src="/src/images/food4.jpeg"
+                alt="Fruit Salad"
+                class="w-full h-40 object-cover"
+              />
+              <div class="p-4 flex justify-between items-center">
+                <h3 class="font-semibold">Fruit Salad</h3>
+                <span class="text-orange-500 font-bold">$5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-300 py-8 mt-12">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-white">About Us</h3>
+          <p class="text-sm">
+            We are passionate about serving fresh, delicious meals. From
+            breakfast to dinner, we make every dish with love and care.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-white">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-orange-500">Home</a></li>
+            <li><a href="#" class="hover:text-orange-500">Menu</a></li>
+            <li><a href="#" class="hover:text-orange-500">Events</a></li>
+            <li><a href="#" class="hover:text-orange-500">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-white">Contact</h3>
+          <p class="text-sm">123 Food Street, City, Country</p>
+          <p class="text-sm">Phone: +123 456 789</p>
+          <p class="text-sm">Email: info@foodsite.com</p>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-4 text-center text-sm">
+        © 2025 Group A Food Recipe. All Rights Reserved.
+      </div>
+    </footer>
+  </body>
+</html>

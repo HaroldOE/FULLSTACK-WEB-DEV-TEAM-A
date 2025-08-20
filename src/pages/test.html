@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group A Food Recipe Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Radial overlay for hero */
+      .hero-overlay {
+        background-image: radial-gradient(
+            circle at top left,
+            rgba(0, 0, 0, 0.4),
+            transparent 60%
+          ),
+          radial-gradient(
+            circle at top right,
+            rgba(0, 0, 0, 0.4),
+            transparent 60%
+          ),
+          radial-gradient(
+            circle at bottom left,
+            rgba(0, 0, 0, 0.4),
+            transparent 60%
+          ),
+          radial-gradient(
+            circle at bottom right,
+            rgba(0, 0, 0, 0.4),
+            transparent 60%
+          );
+      }
+    </style>
+  </head>
+
+  <body class="font-sans text-gray-100">
+    <!-- HERO SECTION -->
+    <section
+      class="relative bg-cover bg-center min-h-screen flex flex-col justify-between"
+      style="background-image: url('/src/images/hero_bg.jpg.jpeg')"
+    >
+      <!-- Radial overlay -->
+      <div class="absolute inset-0 hero-overlay"></div>
+
+      <!-- Header -->
+      <header
+        class="relative z-10 flex justify-between items-center p-4 bg-transparent"
+      >
+        <a href="#"
+          ><img src="./src/images/logo.png" alt="Logo" class="h-8 w-auto"
+        /></a>
+        <nav class="hidden md:flex gap-6">
+          <a href="#" class="hover:text-orange-400">Home</a>
+          <a href="#" class="hover:text-orange-400">Menu</a>
+          <a href="#" class="hover:text-orange-400">Event</a>
+          <a href="#" class="hover:text-orange-400">Gallery</a>
+          <a href="#" class="hover:text-orange-400">About</a>
+          <a href="#" class="hover:text-orange-400">Contact</a>
+        </nav>
+        <button class="bg-orange-500 px-4 py-2 rounded-lg hover:bg-orange-600">
+          Book a Table
+        </button>
+      </header>
+
+      <!-- Hero Content -->
+      <div class="relative z-10 text-center px-4 mt-10">
+        <h3 class="text-lg md:text-xl">Enjoy your healthy delicious meals</h3>
+        <h1 class="treat text-4xl md:text-6xl lg:text-8xl font-bold my-4">
+          Treat Yourself
+        </h1>
+        <p class="max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+          Another free template by Colorlib. Far far away, behind the word
+          mountains, far from the countries Vokalia and Consonantia, there live
+          the blind texts.
+        </p>
+        <button
+          class="mt-6 bg-orange-500 px-6 py-3 rounded-full hover:bg-orange-600"
+        >
+          Explore Now
+        </button>
+      </div>
+
+      <!-- Hero Footer -->
+      <footer class="flex justify-between items-center p-4 text-sm bg-black/40">
+        <p class="mb-2"></p>
+        <div>Socials</div>
+      </footer>
+    </section>
+
+    <!-- Popular Foods Section -->
+    <section class="py-12 bg-[#fee2b3]" id="popular-foods">
+      <div class="container mx-auto px-4">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold mb-4">Popular Foods</h2>
+          <div class="flex justify-center space-x-6">
+            <button
+              class="category-btn text-lg font-semibold text-gray-600 hover:text-red-500"
+              data-category="brakefast"
+            >
+              Breakfast
+            </button>
+
+            <button
+              class="category-btn text-lg font-semibold text-gray-600 hover:text-red-500"
+              data-category="lunch"
+            >
+              Lunch
+            </button>
+            <button
+              class="category-btn text-lg font-semibold text-gray-600 hover:text-red-500"
+              data-category="dinner"
+            >
+              Dinner
+            </button>
+            <button
+              class="category-btn text-lg font-semibold text-gray-600 hover:text-red-500"
+              data-category="drinks"
+            >
+              Drinks
+            </button>
+          </div>
+        </div>
+
+        <!-- Food Cards -->
+        <div
+          id="food-grid"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 transition-all duration-500 ease-in-out"
+        >
+          <!-- Cards will be injected here -->
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const foodData = {
+        breakfast: [
+          {
+            name: "Bread and Egg",
+            img: "https://via.placeholder.com/400x300?text=Bread+Egg",
+          },
+          {
+            name: "Pap an Beans",
+            img: "https://via.placeholder.com/400x300?text=Pap+Beans",
+          },
+          {
+            name: "Rice and Chicken",
+            img: "https://via.placeholder.com/400x300?text=Rice+Chicken",
+          },
+        ],
+
+        lunch: [
+          {
+            name: "Grilled Chicken",
+            img: "https://via.placeholder.com/400x300?text=Grilled+Chicken",
+          },
+          {
+            name: "Pasta Salad",
+            img: "https://via.placeholder.com/400x300?text=Pasta+Salad",
+          },
+          {
+            name: "Beef Burger",
+            img: "https://via.placeholder.com/400x300?text=Beef+Burger",
+          },
+        ],
+        dinner: [
+          {
+            name: "Steak",
+            img: "https://via.placeholder.com/400x300?text=Steak",
+          },
+          {
+            name: "Roasted Salmon",
+            img: "https://via.placeholder.com/400x300?text=Roasted+Salmon",
+          },
+          {
+            name: "Veggie Bowl",
+            img: "https://via.placeholder.com/400x300?text=Veggie+Bowl",
+          },
+        ],
+        drinks: [
+          {
+            name: "Orange Juice",
+            img: "https://via.placeholder.com/400x300?text=Orange+Juice",
+          },
+          {
+            name: "Lemonade",
+            img: "https://via.placeholder.com/400x300?text=Lemonade",
+          },
+          {
+            name: "Iced Coffee",
+            img: "https://via.placeholder.com/400x300?text=Iced+Coffee",
+          },
+        ],
+      };
+
+      const foodGrid = document.getElementById("food-grid");
+      const categoryButtons = document.querySelectorAll(".category-btn");
+
+      function renderCards(category) {
+        // Clear old cards with slide-out effect
+        foodGrid.classList.add("opacity-0", "-translate-x-10");
+
+        setTimeout(() => {
+          foodGrid.innerHTML = "";
+          foodData[category].forEach((item) => {
+            const card = document.createElement("div");
+            card.className =
+              "bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-500 hover:scale-105";
+            card.innerHTML = `
+          <img src="${item.img}" alt="${item.name}" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">${item.name}</h3>
+          </div>
+        `;
+            foodGrid.appendChild(card);
+          });
+
+          // Slide-in effect
+          foodGrid.classList.remove("-translate-x-10");
+          foodGrid.classList.add("translate-x-0", "opacity-100");
+        }, 300);
+      }
+
+      // Default load
+      renderCards("lunch");
+
+      // Add click events
+      categoryButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const category = btn.getAttribute("data-category");
+          renderCards(category);
+        });
+      });
+    </script>
+  </body>
+</html>
